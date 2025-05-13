@@ -1,4 +1,3 @@
-make navigation on site to be drawer on mobile, and make gallery sizes to fit good at mobile without change desktop decoration and quantity
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
@@ -15,6 +14,7 @@ make navigation on site to be drawer on mobile, and make gallery sizes to fit go
       font-family: 'Assistant', sans-serif;
       scroll-behavior: smooth;
       color: #333;
+      overflow-x: hidden;
     }
 
     /* Navigation Bar - Transparent */
@@ -67,6 +67,89 @@ make navigation on site to be drawer on mobile, and make gallery sizes to fit go
     .nav_page a:hover,
     .nav_page a.current {
       color: #0077cc;
+    }
+
+    /* Mobile Navigation Drawer */
+    .mobile-nav-toggle {
+      display: none;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: rgba(0, 119, 204, 0.8);
+      color: white;
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 24px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .mobile-nav-toggle:hover {
+      background: #0077cc;
+    }
+
+    .mobile-nav-toggle.scrolled {
+      background: #0077cc;
+    }
+
+    .mobile-drawer {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 300px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+      transition: right 0.3s ease;
+      padding-top: 80px;
+    }
+
+    .mobile-drawer.open {
+      right: 0;
+    }
+
+    .mobile-drawer #mobile_nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .mobile-drawer .nav_page {
+      padding: 15px 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .mobile-drawer .nav_page a {
+      color: #333;
+      text-decoration: none;
+      display: block;
+      font-size: 18px;
+    }
+
+    .mobile-drawer .nav_page a.current {
+      color: #0077cc;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 998;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+    }
+
+    .overlay.active {
+      opacity: 1;
+      visibility: visible;
     }
 
     /* Fullscreen Video Background */
@@ -231,59 +314,58 @@ make navigation on site to be drawer on mobile, and make gallery sizes to fit go
       border-radius: 8px;
       text-align: center;
       margin-bottom: 30px;
-}
+    }
 
-.video-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
+    .video-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
 
-.video-thumbnail {
-  width: 400px;
-  height: 280px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  overflow: hidden;
-  position: relative;
-}
+    .video-thumbnail {
+      width: 400px;
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      margin: 0 auto;
+    }
 
-.video-thumbnail img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* Shows full image without cropping */
-  display: block;
-}
+    .video-thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
 
+    .play-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 48px;
+      color: white;
+      text-shadow: 0 0 10px rgba(0,0,0,0.6);
+      pointer-events: none;
+    }
 
-.play-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 48px;
-  color: white;
-  text-shadow: 0 0 10px rgba(0,0,0,0.6);
-  pointer-events: none; /* כדי לא לחסום את הלחיצה על הלינק */
-}
+    .video-info {
+      margin-top: 12px;
+    }
 
-.video-info {
-  margin-top: 12px;
-}
+    .video-title {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
 
-.video-title {
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.video-date {
-  font-size: 14px;
-  color: #777;
-}
-
+    .video-date {
+      font-size: 14px;
+      color: #777;
+    }
 
     .play-icon {
       position: absolute;
@@ -301,46 +383,43 @@ make navigation on site to be drawer on mobile, and make gallery sizes to fit go
       font-size: 1.5rem;
     }
 
-
-
     /* Gallery Section - Improved */
-#gallery {
-  background: black;
-  padding: 80px 20px;
-}
+    #gallery {
+      background: black;
+      padding: 80px 20px;
+    }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-.gallery-item {
-  width: 400px;
-  aspect-ratio: 1 / 1; /* הופך את הפריטים לריבועים */
-  background: #ddd;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s ease-out;
-}
+    .gallery-item {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background: #ddd;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
 
-.gallery-item.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+    .gallery-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-.gallery-item:hover {
-  transform: scale(1.03) translateY(0);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  z-index: 1;
-}
-
+    .gallery-item:hover {
+      transform: scale(1.03) translateY(0);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
 
     /* About Section */
     #about {
@@ -433,21 +512,14 @@ make navigation on site to be drawer on mobile, and make gallery sizes to fit go
 
     /* Mobile - תצוגה אנכית */
     @media screen and (max-width: 768px) {
-      #site_nav {
-        flex-direction: column;
+      .mobile-nav-toggle {
+        display: flex;
+        justify-content: center;
         align-items: center;
-        gap: 15px;
       }
 
-      .nav_page a {
-        font-size: 20px;
-        display: block;
-        width: 100%;
-        text-align: center;
-      }
-
-      nav {
-        padding-top: 10px;
+      .desktop {
+        display: none;
       }
 
       .video-content h1 {
@@ -470,13 +542,51 @@ make navigation on site to be drawer on mobile, and make gallery sizes to fit go
       .section-title {
         font-size: 2rem;
       }
+
+      .video-thumbnail {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery-item {
+        width: 100%;
+      }
+    }
+
+    @media screen and (min-width: 769px) {
+      .mobile-drawer {
+        display: none;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav id="naviagtion" class="desktop">
+  <!-- Mobile Navigation Toggle -->
+  <button class="mobile-nav-toggle" id="mobileToggle">☰</button>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul id="mobile_nav">
+      <li class="nav_page"><a class="nav_anchor current" href="#home"><span>עמוד הבית</span></a></li>
+      <li class="nav_page"><a class="nav_anchor" href="#shows"><span>הופעות</span></a></li>
+      <li class="nav_page"><a class="nav_anchor" href="#videos"><span>שירים וסינגלים</span></a></li>
+      <li class="nav_page"><a class="nav_anchor" href="#gallery"><span>תמונות</span></a></li>
+      <li class="nav_page"><a class="nav_anchor" href="#about"><span>אודות</span></a></li>
+      <li class="nav_page"><a class="nav_anchor" href="#contact"><span>צרו קשר</span></a></li>
+    </ul>
+  </div>
+
+  <!-- Overlay for mobile menu -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Desktop Navigation -->
+  <nav id="navigation" class="desktop">
     <div class="navigation-holder">
       <ul id="site_nav">
         <li class="nav_page"><a class="nav_anchor current" href="#home"><span>עמוד הבית</span></a></li>
@@ -576,108 +686,3 @@ make navigation on site to be drawer on mobile, and make gallery sizes to fit go
     </div>
   </div>
 </section>
-
-
-
-  <section id="gallery">
-    <div class="section-container">
-      <div class="gallery-grid">
-        <div class="gallery-item" style="background-image: url('img/WhatsApp Image 5785-08-14 at 17.48.27.jpeg')"></div>
-        <div class="gallery-item" style="background-image: url('img/WhatsApp Image 5785-08-14 at 17.48.51.jpeg')"></div>
-        <div class="gallery-item" style="background-image: url('img/WhatsApp Image 5785-08-14 at 17.48.32.jpeg')"></div>
-      </div>
-      <div class="spacer"></div>
-       <div class="gallery-grid">
-        <div class="gallery-item" style="background-image: url('img/20.jpeg')"></div>
-        <div class="gallery-item" style="background-image: url('img/7 חתוך לפוסט צבעוני.png')"></div>
-        <div class="gallery-item" style="background-image: url('img/1 לאורך.jpg')"></div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="section-container">
-      <div class="social-links">
-        <a href="#" aria-label="פייסבוק"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="אינסטגרם"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="יוטיוב"><i class="fab fa-youtube"></i></a>
-        <a href="#" aria-label="ספוטיפיי"><i class="fab fa-spotify"></i></a>
-        <a href="#" aria-label="אפל מיוזיק"><i class="fab fa-apple"></i></a>
-      </div>
-      <p>© 2025 כל הזכויות שמורות לדניאל גד</p>
-      <p class="copyright">Built by Lia Mesika(click for more info)</p>
-    </div>
-  </footer>
-
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-  <!-- Script to handle scroll + active menu -->
-  <script>
-    const links = document.querySelectorAll('.nav_anchor');
-    const sections = document.querySelectorAll('section');
-    const nav = document.querySelector('nav');
-
-    function onScroll() {
-      // Add/remove scrolled class to nav
-      if (window.scrollY > 50) {
-        nav.classList.add('scrolled');
-      } else {
-        nav.classList.remove('scrolled');
-      }
-
-      // Highlight active menu item
-      let scrollPos = window.scrollY + 150;
-      sections.forEach(section => {
-        if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
-          links.forEach(link => {
-            link.classList.remove('current');
-            if (link.getAttribute('href') === '#' + section.id) {
-              link.classList.add('current');
-            }
-          });
-        }
-      });
-    }
-
-    window.addEventListener('scroll', onScroll);
-
-    // Play video on mobile (autoplay is often blocked)
-    document.addEventListener('DOMContentLoaded', function() {
-      const video = document.querySelector('.video-background');
-      if (window.innerWidth <= 768) {
-        video.muted = true;
-        video.play().catch(e => {
-          video.controls = true;
-        });
-      }
-
-      // Gallery fade-in animation
-      const galleryItems = document.querySelectorAll('.gallery-item');
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, { threshold: 0.1 });
-
-      galleryItems.forEach(item => {
-        observer.observe(item);
-      });
-
-      // Smooth scrolling for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-          });
-        });
-      });
-    });
-  </script>
-
-</body>
-</html>
