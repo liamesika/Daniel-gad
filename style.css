@@ -70,7 +70,7 @@
       z-index: 1000;
       background: transparent;
       border: none;
-      color: #0d0d0d;
+      color: white;
       font-size: 24px;
       cursor: pointer;
     }
@@ -297,17 +297,17 @@
     min-height: 180px;
     background-size: cover;
     background-position: center;
-  }
+      }
 
-.section-container {
-  padding-left: 160px;
-  padding-right: 160px;
-}
-  .show-date,
-  .show-location {
-    font-size: 0.9rem;
-  }
-}
+    .section-container {
+      padding-left: 160px;
+      padding-right: 160px;
+    }
+      .show-date,
+      .show-location {
+        font-size: 0.9rem;
+      }
+    }
 
     .show-img {
       flex: 1;
@@ -840,14 +840,29 @@
    object-fit: cover;
 }
 @media (max-width: 768px) {
-  .gallery-container {
-    grid-template-columns: 1fr; /* רק אחת בשורה */
+   .gallery-container {
+    grid-template-columns: 1fr; /* תמונה אחת בשורה */
+    max-width: 100%;
+    padding: 0 20px; /* רווח מימין ומשמאל */
   }
 
   .gallery-item {
-    width: 300px;
-    height: 200px; /* גובה מותאם למובייל, אפשר גם 180px או מה שתרצי */
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* רווח בין התמונות */
+  }
 
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+
+  /* הצג רק 4 תמונות ראשונות */
+  .gallery-item:nth-child(n+5) {
+    display: none;
   }
 }
 .gallery-item {
