@@ -160,6 +160,17 @@
       padding: 0 20px;
     }
 
+    .video-content h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-content p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      max-width: 800px;
+    }
 
     /* Button Styles */
     .btn {
@@ -815,4 +826,33 @@
 
 .footer__copyright a:hover {
   color: #0077cc; /* כחול כמו שאר האתר */
+}
+.gallery-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item img {
+  width: 100%;
+    height: 100%; /* שימי לב לזה – הוא היה על auto */
+  border-radius: 4px;
+   display: block;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-item {
+    height: 200px; /* גובה מותאם למובייל, אפשר גם 180px או מה שתרצי */
+  }
 }
