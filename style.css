@@ -6,7 +6,7 @@
       margin: 0;
       font-family: 'Assistant', sans-serif;
       scroll-behavior: smooth;
-      color: #333;
+      color: #e0e0e0;
     }
 
     /* Navigation Bar - Transparent */
@@ -23,7 +23,7 @@
     }
 
     nav.scrolled {
-      background: #333333;
+      background: #0d0d0d;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
@@ -58,7 +58,7 @@
     /* Hover and current page styling */
     .nav_page a:hover,
     .nav_page a.current {
-      color: #0077cc !important;
+      color: #00bcd4 !important;
     }
 
     /* Mobile Navigation */
@@ -76,7 +76,7 @@
     }
 
     nav.scrolled .mobile-menu-btn {
-      color: #333;
+      color: #e0e0e0;
     }
 
     .mobile-nav {
@@ -108,7 +108,7 @@
     }
 
     .mobile-nav .nav_page a {
-      color: #333;
+      color: #e0e0e0;
       display: block;
       font-size: 18px;
     }
@@ -120,7 +120,7 @@
       background: none;
       border: none;
       font-size: 24px;
-      color: #333;
+      color: #e0e0e0;
       cursor: pointer;
     }
 
@@ -176,31 +176,31 @@
     .btn {
       display: inline-block;
       padding: 12px 30px;
-      background: #0077cc;
+      background: #00bcd4;
       color: white;
       text-decoration: none;
       border-radius: 50px;
       font-weight: bold;
       transition: all 0.3s;
-      border: 2px solid #0077cc;
+      border: 2px solid #00bcd4;
       font-size: 1.1rem;
       margin: 10px;
     }
 
     .btn:hover {
       background: transparent;
-      color: #0077cc;
+      color: #00bcd4;
     }
 
     .btn-outline {
       background: transparent;
-      color: white;
+      color: #00bcd4;
       border-color: white;
     }
 
     .btn-outline:hover {
       background: white;
-      color: #0077cc;
+      color: #00bcd4;
     }
 
     /* Section Styles */
@@ -235,13 +235,13 @@
       display: block;
       width: 100px;
       height: 4px;
-      background: #0077cc;
+      background: #00bcd4;
       margin: 15px auto;
     }
 
     /* Shows Section */
 #shows {
-  background: #333333;
+  background: #0d0d0d;
 }
 
 .section-container {
@@ -299,9 +299,6 @@
     background-position: center;
   }
 
-  .show-title {
-    font-size: 1.1rem;
-  }
 .section-container {
   padding-left: 160px;
   padding-right: 160px;
@@ -324,7 +321,7 @@
     }
 
     .show-date {
-      color: #0077cc;
+      color: #00bcd4;
       font-weight: bold;
       margin-bottom: 10px;
     }
@@ -332,10 +329,11 @@
     .show-title {
       font-size: 1.3rem;
       margin-bottom: 10px;
+      color:#333333;
     }
 
     .show-location {
-      color: #666;
+      color: #333333;
       margin-bottom: 15px;
     }
 
@@ -358,7 +356,7 @@
 
     /* Gallery Section */
     #gallery {
-      background: black;
+      background: #0d0d0d;
       padding: 80px 20px;
     }
 
@@ -368,19 +366,6 @@
       gap: 15px;
       max-width: 1200px;
       margin: 0 auto;
-    }
-
-    .gallery-item {
-      width: 400px;
-      aspect-ratio: 1 / 1;
-      background: #ddd;
-      background-size: cover;
-      background-position: center;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.6s ease-out;
     }
 
     .gallery-item.visible {
@@ -394,11 +379,11 @@
       z-index: 1;
     }
     #videos{
-        background:#333333;
+        background:#0d0d0d;
       }
     /* About Section */
     #about {
-      background: #333333;
+      background: #0d0d0d;
     }
 
     .about-content {
@@ -418,6 +403,7 @@
 
     .about-text {
       color:white;
+      direction:rtl;
       font-size: 1.2rem;
       line-height: 1.8;
       flex: 1;
@@ -438,7 +424,7 @@
     .contact-form {
       max-width: 600px;
       margin: 0 auto;
-      background: #333333;
+      background: #0d0d0d;
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -477,7 +463,7 @@
 
     /* Footer */
     footer {
-      background: #333;
+      background: #333333;
       color: white;
       text-align: center;
       padding: 30px 20px;
@@ -497,7 +483,7 @@
     }
 
     .social-links a:hover {
-      color: #0077cc;
+      color: #00bcd4;
     }
 
     .copyright {
@@ -579,9 +565,7 @@
         aspect-ratio: 16/9;
       }
 
-      .gallery-item {
-        width: 100%;
-      }
+
     }
 
     @media (max-width: 767px) {
@@ -661,7 +645,7 @@
 
   .video-date {
     font-size: 12px;
-    color: #777;
+    color: #e0e0e0;
   }
 
   .video-info .btn {
@@ -706,7 +690,7 @@
   .show-location,
   .show-date {
     font-size: 16px;
-    color: #777;
+    color: #e0e0e0;
     margin: 4px 0;
   }
 
@@ -717,9 +701,6 @@
     display: inline-block;
   }
 
-  .gallery-item {
-    width: 100%;
-  }
 
   .about-content {
     flex-direction: column;
@@ -819,13 +800,25 @@
 .footer__copyright a {
   font-decoration:bold;
   font-size:18px;
-  color: black; /* צבע כהה אך לא שחור */
+  color: #ffffff; /* צבע כהה אך לא שחור */
   text-decoration: none;
   transition: color 0.3s;
+  background: linear-gradient(90deg, #00bcd4, #ffffff, #00bcd4);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 2.5s linear infinite;
 }
-
+@keyframes shimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
 .footer__copyright a:hover {
-  color: #0077cc; /* כחול כמו שאר האתר */
+  color: #00bcd4; /* כחול כמו שאר האתר */
 }
 .gallery-section {
   padding: 60px 20px;
@@ -835,24 +828,103 @@
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .gallery-item img {
-  width: 100%;
-    height: 100%; /* שימי לב לזה – הוא היה על auto */
-  border-radius: 4px;
+   width: 350px;
+   height: 300px; /* שימי לב לזה – הוא היה על auto */
    display: block;
-  object-fit: cover;
+   object-fit: cover;
 }
 @media (max-width: 768px) {
   .gallery-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr; /* רק אחת בשורה */
   }
 
   .gallery-item {
+    width: 300px;
     height: 200px; /* גובה מותאם למובייל, אפשר גם 180px או מה שתרצי */
+
   }
+}
+.gallery-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.gallery-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Mobile Navigation */
+.mobile-menu-btn {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+nav.scrolled .mobile-menu-btn {
+  color: #e0e0e0;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  height: 100%;
+  background: #0d0d0d;
+  z-index: 999;
+  transition: right 0.3s ease;
+  padding-top: 60px;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-nav.open {
+  right: 0;
+}
+
+.mobile-nav #mobile_site_nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav .nav_page {
+  padding: 15px 20px;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.mobile-nav .nav_page a {
+  color: #e0e0e0;
+  display: block;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.mobile-nav .nav_page a:hover,
+.mobile-nav .nav_page a.current {
+  color: #00bcd4;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #e0e0e0;
+  cursor: pointer;
 }
