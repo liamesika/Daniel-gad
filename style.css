@@ -160,17 +160,6 @@
       padding: 0 20px;
     }
 
-    .video-content h1 {
-      font-size: 3.5rem;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-
-    .video-content p {
-      font-size: 1.5rem;
-      margin-bottom: 30px;
-      max-width: 800px;
-    }
 
     /* Button Styles */
     .btn {
@@ -623,9 +612,9 @@
 
   .video-card {
     max-width: 100%;
-    width: 300px;
-    max-height: 300px;
+    width: 340px;
     padding: 0;
+    height:100%;
     background: #e6e6e6;
     border-radius: 8px;
     overflow: hidden;
@@ -633,7 +622,7 @@
 
   .video-thumbnail {
     width: 100%;
-    height: 200px;
+    height: 100%;
     margin: 0 auto;
     display: block;
     overflow: hidden;
