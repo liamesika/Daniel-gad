@@ -25,7 +25,6 @@
       <li class="nav_page"><a class="nav_anchor" href="#videos"><span>שירים וסינגלים</span></a></li>
       <li class="nav_page"><a class="nav_anchor" href="#gallery"><span>תמונות</span></a></li>
       <li class="nav_page"><a class="nav_anchor" href="#about"><span>אודות</span></a></li>
-      <li class="nav_page"><a class="nav_anchor" href="#footer"><span>צרו קשר</span></a></li>
     </ul>
   </div>
 
@@ -38,7 +37,6 @@
         <li class="nav_page"><a class="nav_anchor" href="#videos"><span>שירים וסינגלים</span></a></li>
         <li class="nav_page"><a class="nav_anchor" href="#gallery"><span>תמונות</span></a></li>
         <li class="nav_page"><a class="nav_anchor" href="#about"><span>אודות</span></a></li>
-        <li class="nav_page"><a class="nav_anchor" href="#footer"><span>צרו קשר</span></a></li>
       </ul>
     </div>
   </nav>
@@ -126,22 +124,19 @@
 </section>
 
   <section id="gallery">
-    <center>
-    <div class="section-container">
-      <h2 class="section-title">תמונות</h2>
-      <div class="gallery-grid">
-        <div class="gallery-item" style="background-image: url('img/WhatsApp Image 5785-08-14 at 17.48.27.jpeg')"></div>
-        <div class="gallery-item" style="background-image: url('img/WhatsApp Image 5785-08-14 at 17.48.51.jpeg')"></div>
-        <div class="gallery-item" style="background-image: url('img/WhatsApp Image 5785-08-14 at 17.48.32.jpeg')"></div>
-      </div>
-      <div class="spacer"></div>
-       <div class="gallery-grid">
-        <div class="gallery-item" style="background-image: url('img/20.jpeg')"></div>
-        <div class="gallery-item" style="background-image: url('img/7 חתוך לפוסט צבעוני.png')"></div>
-        <div class="gallery-item" style="background-image: url('img/1 לאורך.jpg')"></div>
-      </div>
-    </div></center>
-  </section>
+  <div class="gallery-container">
+    <div class="gallery-item"><img src="img/WhatsApp Image 5785-08-14 at 17.48.49.jpeg" alt="תמונה 1"></div>
+    <div class="gallery-item"><img src="img/WhatsApp Image 5785-08-14 at 17.48.51.jpeg" alt="תמונה 2"></div>
+    <div class="gallery-item"><img src="img/gallery3.jpg" alt="תמונה 3"></div>
+    <div class="gallery-item"><img src="img/gallery4.jpg" alt="תמונה 4"></div>
+    <div class="gallery-item"><img src="img/gallery5.jpg" alt="תמונה 5"></div>
+    <div class="gallery-item"><img src="img/gallery6.jpg" alt="תמונה 6"></div>
+    <div class="gallery-item"><img src="img/gallery7.jpg" alt="תמונה 7"></div>
+    <div class="gallery-item"><img src="img/gallery8.jpg" alt="תמונה 8"></div>
+    <div class="gallery-item"><img src="img/gallery9.jpg" alt="תמונה 9"></div>
+  </div>
+</section>
+
 
   <section id="about">
   <div class="section-container">
@@ -290,7 +285,7 @@
       });
     });
     // Smooth scrolling for anchor links
-    document.querySelectorAll('section, footer, .gallery-item').forEach(element => {
+    document.querySelectorAll('section, .gallery-item').forEach(element => {
         observer.observe(element);
       });
 
