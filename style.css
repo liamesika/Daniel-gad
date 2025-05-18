@@ -8,6 +8,29 @@
       scroll-behavior: smooth;
       color: #e0e0e0;
     }
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.video-overlay {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding-top: 200px;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 
     /* Navigation Bar - Transparent */
     nav {
