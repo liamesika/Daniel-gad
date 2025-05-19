@@ -131,7 +131,7 @@ body, html {
     }
 
     .mobile-nav .nav_page a {
-      color: #e0e0e0;
+      color: #333333;
       display: block;
       font-size: 18px;
     }
@@ -327,6 +327,7 @@ body, html {
     }
       .show-date,
       .show-location {
+      
         font-size: 0.9rem;
       }
     }
@@ -343,7 +344,7 @@ body, html {
     }
 
     .show-date {
-      color: #00bcd4;
+      color: #333333;
       font-weight: bold;
       margin-bottom: 10px;
     }
