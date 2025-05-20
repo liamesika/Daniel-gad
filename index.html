@@ -71,62 +71,58 @@
 
   <!-- Sections -->
   <section id="home" class="visible">
-  <video autoplay muted loop playsinline class="video-background">
-    <source src="img/Daniel_mainvid.mp4" type="video/mp4">
-  </video>
-  <div class="video-overlay">
-    <div class="video-content">
-      <p> מוזיקה מקורית עם נשמה</p>
-      <p> האזינו לסינגלים החדשים וגלו מתי ההופעה הקרובה</p>
-      <div>
-        <a href="#shows" class="btn btn-outline">הופעות קרובות</a>
-        <a href="#videos" class="btn">האזינו עכשיו</a>
+    <video autoplay muted loop playsinline class="video-background">
+      <source src="img/Daniel_mainvid.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay">
+      <div class="video-content">
+          <h1 class="hero-title">דניאל גד</h1>
+        <div>
+          <a href="#shows" class="btn btn-outline"> לוח הופעות</a>
+        </div>
+      </div>
+    </div>
+</section>
+
+  <section id="#shows" class="shows-section">
+  <div class="header-image">
+    <img src="img/WhatsApp Image 5785-08-14 at 17.48.32.jpeg" alt="הופעות קרובות" />
+  </div>
+
+  <div class="section-container">
+    <h2 class="section-title">הופעות קרובות</h2>
+
+    <div class="show-line">
+      <div class="show-info">
+        <div class="show-date">9 ביולי</div>
+        <div class="show-title">זאפה, הרצליה</div>
+        <a href="https://www.zappa-club.co.il" class="btn-ticket" target="_blank">רכישת כרטיסים</a>
+      </div>
+    </div>
+
+    <div class="show-line">
+      <div class="show-info">
+        <div class="show-date">14 באוגוסט</div>
+        <div class="show-title">זאפה, ירושלים</div>
+        <a href="https://www.zappa-club.co.il" class="btn-ticket" target="_blank">רכישת כרטיסים</a>
+      </div>
+    </div>
+
+    <div class="show-line">
+      <div class="show-info">
+        <div class="show-date">21 באוגוסט</div>
+        <div class="show-title">היכל התרבות, תל אביב</div>
+        <a href="https://www.hatarbut.co.il" class="btn-ticket" target="_blank">רכישת כרטיסים</a>
       </div>
     </div>
   </div>
 </section>
 
-  <section id="shows">
-    <div class="section-container">
-      <h2 class="section-title">הופעות קרובות</h2>
-      <div class="shows-grid">
-        <div class="show-card delay-1">
-          <div class="show-img" style="background-image: url('img/show4.png')"></div>
-          <div class="show-content">
-            <center>
-            <div class="show-date">9 ביולי</div>
-            <h3 class="show-title">זאפה </h3>
-            <div class="show-location">הרצליה</div>
-            <a href="https://www.zappa-club.co.il" class="btn">רכישת כרטיסים</a></center>
-          </div>
-        </div>
-        <div class="show-card delay-2">
-          <div class="show-img" style="background-image: url('img/show2.jpeg')"></div>
-          <div class="show-content">
-            <center>
-            <div class="show-date">14 באוגוסט</div>
-            <h3 class="show-title">זאפה</h3>
-            <div class="show-location">ירושלים</div>
-            <a href="https://www.zappa-club.co.il" class="btn">רכישת כרטיסים</a></center>
-          </div>
-        </div>
-        <div class="show-card delay-3">
-          <div class="show-img" style="background-image: url('img/show1.jpeg')"></div>
-          <div class="show-content">
-            <center>
-            <div class="show-date">21 באוגוסט</div>
-            <h3 class="show-title">היכל התרבות</h3>
-            <div class="show-location">תל אביב</div>
-            <a href="https://www.hatarbut.co.il" class="btn">רכישת כרטיסים</a></center>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="videos" class="video-section">
+ <section id="videos" class="video-section">
   <h2 class="section-title">שירים וסינגלים</h2>
   <div class="video-grid">
+
     <div class="video-item">
       <div class="video-embed">
         <iframe src="https://www.youtube.com/embed/qVj29VNCWxU?rel=0&showinfo=0"
@@ -148,8 +144,22 @@
         </iframe>
       </div>
     </div>
+
+    <!-- סינגל חדש -->
+    <div class="video-item">
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/74Q7-sFWpyY?rel=0&showinfo=0"
+                title="דניאל גד - סינגל חדש"
+                frameborder="0"
+                allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+        </iframe>
+      </div>
+    </div>
+
   </div>
 </section>
+
 
   <section id="gallery">
   <h2 class="section-title">גלריה</h2>
@@ -167,16 +177,26 @@
 </section>
 
 
-  <section id="about">
-  <div class="section-container">
-    <h2 class="section-title">קצת עליי</h2>
-    <div class="about-content">
-      <div class="about-text">
-        <p>דניאל גד הוא יוצר וזמר ישראלי אשר שיריו נוגעים בלבבות רבים. עם קול ייחודי, לחנים עמוקים ונוכחות בימתית יוצאת דופן – דניאל מצליח לרגש ולחבר קהל רחב מכל הגילים.</p>
-        <p>בין אם מדובר בהופעות חיות או סינגלים חדשים – כל יצירה שלו נובעת מנשמה אמיתית וחיבור עמוק למוזיקה ולמילים.</p>
-      </div>
-      <div class="about-image" style="background-image: url('img/shabab.jpg'); background-size: cover; background-position: center;"></div>
+ <section id="contact" style="background-color: #333333; color: white; padding: 50px 0px 20px 20px; text-align: center;">
+  <div class="section-container" style="max-width: 800px; margin: 0 auto;">
+
+    <h2 class="section-title" style="font-size: 2.5rem; margin-bottom: 40px; color:white;">להזמנת הופעות</h2>
+
+    <div style="border-top: 1px solid #777; padding: 30px 0;">
+      <p style="font-size: 1.1rem; margin: 10px 0; direction:rtl">טלפון:</p>
+      <p style="font-size: 1.1rem; margin: 10px 0;"> 055-333-4444</p>
+      <p style="font-size: 1.1rem; margin: 25px 0 5px 0; direction:rtl">אימייל:</p>
+      <p style="font-size: 1.1rem; margin: 5px 0;">yehuda.kalman@gmail.com</p>
+      <p style="font-size: 1.1rem; margin: 5px 0;">Dan13Lgad@gmail.com</p>
     </div>
+
+    <div style="margin-top: 40px; border-top: 1px solid #777; padding-top: 40px;">
+      <a href="https://wa.me/972553334444" target="_blank"
+         style="padding: 12px; background: #9b59b6; color: white; border: none; text-decoration: none; font-weight: bold; font-size: 1rem; transition: background 0.3s;">
+        כתבו לי בוואצאפ
+      </a>
+    </div>
+
   </div>
 </section>
 
@@ -189,12 +209,7 @@
         <a href="https://open.spotify.com/artist/2bsewnpyPV5DSmp4bjIqw0?autoplay=true" aria-label="ספוטיפיי"><i class="fab fa-spotify"></i></a>
         <a href="https://music.apple.com/il/artist/דניאל-גד/1326605328" aria-label="אפל מיוזיק"><i class="fab fa-apple"></i></a>
       </div>
-      <!-- Contact Info -->
-    <p style="color: white; font-size: 15px; margin: 10px 0; text-align: center;">
-  טלפון: <a href="tel:+972501234567" style="color: white; text-decoration: none;">050-1234567</a>
-  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  מייל: <a href="mailto:danielgad@gmail.com" style="color: white; text-decoration: none;">danielgad@gmail.com</a>
-</p>
+     
       <p>© 2025 כל הזכויות שמורות לדניאל גד</p>
       <div class="footer__copyright caption">
       <a href="https://www.instagram.com/lia.m_web?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Built by Lia Mesika(click for more info)</a>
