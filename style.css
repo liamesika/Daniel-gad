@@ -1096,10 +1096,4 @@ body, html {
   z-index: -1;
   transition: all 0.5s ease;
 }
-@media screen and (max-width: 768px) {
-  #shows::before,
-  #videos::before {
-    display: none;
-  }
 
-}
