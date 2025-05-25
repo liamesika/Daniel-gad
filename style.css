@@ -1057,7 +1057,9 @@ body, html {
   .smoky-bg::before {
     background: none;
     filter: none;
-    opacity: 0;
+      filter: blur(30px);
+  opacity: 0.3;
+
   }
 
   .smoky-bg {
