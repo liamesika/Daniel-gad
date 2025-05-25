@@ -1071,3 +1071,39 @@ body, html {
   50% { transform: translate(50px, 50px) scale(1.2); }
   100% { transform: translate(0, 0) scale(1); }
 }
+#shows, #videos {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #4b0082 0%, #1a1a1a 40%, #000 100%);
+  background-blend-mode: screen;
+  z-index: 0;
+}
+
+#shows::before,
+#videos::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(128,0,128,0.3) 0%, transparent 70%),
+              radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 80%),
+              radial-gradient(circle, rgba(75,0,130,0.2) 0%, transparent 60%);
+  animation: smoke 30s infinite linear;
+  filter: blur(100px);
+  opacity: 0.6;
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+@media screen and (max-width: 768px) {
+  #shows::before,
+  #videos::before {
+    display: none;
+  }
+
+  #shows,
+  #videos {
+    background: #1a1a1a !important;
+  }
+}
