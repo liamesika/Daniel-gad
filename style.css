@@ -264,7 +264,7 @@ body::before {
 
     .btn-outline {
       background: transparent;
-      color: #ba68c8;
+      color: none;
       border-color: #f2e6ff;
     }
 
