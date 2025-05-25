@@ -396,8 +396,8 @@ body, html {
       font-size: 1.5rem;
     }
 
-    /* Gallery Section */
-    #gallery {
+/* Gallery, Videos, Shows Section */
+#gallery, #videos, #shows {
   position: relative;
   overflow: hidden;
   background: radial-gradient(circle at center, #4b0082 0%, #1a1a1a 40%, #000 100%);
@@ -406,7 +406,7 @@ body, html {
 }
 
 /* שכבת העשן */
-#gallery::before {
+#gallery::before, #videos::before, #shows::before {
   content: '';
   position: absolute;
   top: -50%;
@@ -422,11 +422,6 @@ body, html {
   z-index: -1;
 }
 
-@keyframes smoke {
-  0% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(50px, 50px) scale(1.2); }
-  100% { transform: translate(0, 0) scale(1); }
-}
 
 
     .gallery-grid {
