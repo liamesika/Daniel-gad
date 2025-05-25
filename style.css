@@ -1049,7 +1049,22 @@ body, html {
   filter: blur(100px);
   opacity: 0.6;
   z-index: -1;
+  transition: all 0.5s ease;
 }
+
+/* התאמה למובייל – רקע פשוט יותר */
+@media screen and (max-width: 768px) {
+  .smoky-bg::before {
+    background: none;
+    filter: none;
+    opacity: 0;
+  }
+
+  .smoky-bg {
+    background: #1a1a1a; /* רקע פשוט כהה */
+  }
+}
+
 
 @keyframes smoke {
   0% { transform: translate(0, 0) scale(1); }
