@@ -40,6 +40,33 @@ body, html {
   height: 100%;
   overflow-x: hidden;
 }
+body {
+  margin: 0;
+  font-family: 'Secular One', sans-serif;
+  scroll-behavior: smooth;
+  color: #f2e6ff;
+  background: radial-gradient(circle at center, #4b0082 0%, #1a1a1a 40%, #000 100%);
+  background-blend-mode: screen;
+  position: relative;
+  overflow-x: hidden;
+  z-index: 0;
+}
+body::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(128,0,128,0.3) 0%, transparent 70%),
+              radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 80%),
+              radial-gradient(circle, rgba(75,0,130,0.2) 0%, transparent 60%);
+  animation: smoke 30s infinite linear;
+  filter: blur(100px);
+  opacity: 0.6;
+  z-index: -1;
+}
+
 
 
     /* Navigation Bar - Transparent */
@@ -395,32 +422,6 @@ body, html {
       color: #f2e6ff;
       font-size: 1.5rem;
     }
-
-/* Gallery, Videos, Shows Section */
-#gallery, #videos, #shows {
-  position: relative;
-  overflow: hidden;
-  background: radial-gradient(circle at center, #4b0082 0%, #1a1a1a 40%, #000 100%);
-  background-blend-mode: screen;
-  z-index: 0;
-}
-
-/* שכבת העשן */
-#gallery::before, #videos::before, #shows::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(128,0,128,0.3) 0%, transparent 70%),
-              radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 80%),
-              radial-gradient(circle, rgba(75,0,130,0.2) 0%, transparent 60%);
-  animation: smoke 30s infinite linear;
-  filter: blur(100px);
-  opacity: 0.6;
-  z-index: -1;
-}
 
 
 
@@ -1019,75 +1020,6 @@ body, html {
     height: auto;
   }
 }
-.smoky-bg {
-  position: relative;
-  overflow: hidden;
-  background: radial-gradient(circle at center, #4b0082 0%, #1a1a1a 40%, #000 100%);
-  background-blend-mode: screen;
-  z-index: 0;
-}
-
-.smoky-bg::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(128,0,128,0.3) 0%, transparent 70%),
-              radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 80%),
-              radial-gradient(circle, rgba(75,0,130,0.2) 0%, transparent 60%);
-  animation: smoke 30s infinite linear;
-  filter: blur(100px);
-  opacity: 0.6;
-  z-index: -1;
-  transition: all 0.5s ease;
-}
-
-/* התאמה למובייל – רקע פשוט יותר */
-@media screen and (max-width: 768px) {
-  .smoky-bg::before {
-    background: none;
-    filter: none;
-      filter: blur(30px);
-  opacity: 0.3;
-
-  }
-
-  .smoky-bg {
-    background: #1a1a1a; /* רקע פשוט כהה */
-  }
-}
 
 
-@keyframes smoke {
-  0% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(50px, 50px) scale(1.2); }
-  100% { transform: translate(0, 0) scale(1); }
-}
-#shows, #videos {
-  position: relative;
-  overflow: hidden;
-  background: radial-gradient(circle at center, #4b0082 0%, #1a1a1a 40%, #000 100%);
-  background-blend-mode: screen;
-  z-index: 0;
-}
-
-#shows::before,
-#videos::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(128,0,128,0.3) 0%, transparent 70%),
-              radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 80%),
-              radial-gradient(circle, rgba(75,0,130,0.2) 0%, transparent 60%);
-  animation: smoke 30s infinite linear;
-  filter: blur(100px);
-  opacity: 0.6;
-  z-index: -1;
-  transition: all 0.5s ease;
-}
 
