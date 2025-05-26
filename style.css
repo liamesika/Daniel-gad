@@ -244,7 +244,7 @@ body::before {
     /* Button Styles */
     .btn {
       display: inline-block;
-      padding: 18px 40px;        /* יותר גובה ורוחב */
+      padding: 14px 40px;        /* יותר גובה ורוחב */
       background: #9b59b6;
       color: #f2e6ff;
       text-decoration: none;
