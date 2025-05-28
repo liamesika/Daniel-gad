@@ -118,9 +118,9 @@ body::before {
       color: #f2e6ff;
       padding: 8px 12px;
       transition: all 0.3s;
-      font-size:14px;
+      font-size:16px;
       border-radius: 4px;
-      font-weight: 200; /* Extra light */
+      font-weight: 300; /* Extra light */
     }
 
     nav.scrolled .nav_page a {
