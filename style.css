@@ -14,7 +14,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  object-position: top center; /* זה מה שישנה את המיקום! */
+  object-position: top center 220px; /* זה מה שישנה את המיקום! */
   object-fit: cover;
   z-index: -1;
 }
