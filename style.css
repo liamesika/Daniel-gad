@@ -99,7 +99,7 @@ body::before {
 
     .navigation-holder {
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
     }
 
     #site_nav {
@@ -110,7 +110,6 @@ body::before {
       gap: 20px;
       direction: rtl;
       flex-wrap: wrap;
-      justify-content: center;
     }
 
     .nav_page a {
