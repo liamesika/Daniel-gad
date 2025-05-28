@@ -14,7 +14,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  object-position: center 120px; /* זה מה שישנה את המיקום! */
+  object-position: center 15%; /* תשני את המספר הזה עד שזה יושב מושלם */
   object-fit: cover;
   z-index: -1;
 }
