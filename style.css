@@ -265,7 +265,7 @@ body::before {
     .btn-outline {
       background: transparent;
       color: none;
-      border-color: #f2e6ff;
+      border-color: none;
     }
 
     .btn-outline:hover {
