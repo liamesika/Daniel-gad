@@ -892,7 +892,7 @@ body::before {
 
 .gallery-item img {
    width: 350px;
-   height: 300px; /* שימי לב לזה – הוא היה על auto */
+   height: 600px; /* שימי לב לזה – הוא היה על auto */
    display: block;
    object-fit: cover;
 }
