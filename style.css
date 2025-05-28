@@ -42,7 +42,7 @@ body, html {
 }
 body {
   margin: 0;
-  font-family: 'Secular One', sans-serif;
+  font-family: 'Antidott', sans-serif;
   scroll-behavior: smooth;
   color: #f2e6ff;
   background: radial-gradient(circle at center, #4b0082 0%, #1a1a1a 40%, #000 100%);
@@ -237,7 +237,7 @@ body::before {
       font-weight: 900;
       text-align: center;
       text-shadow: 0 0 10px rgba(214, 51, 255, 0.8);
-      font-family: 'Secular One', sans-serif; /* או כל פונט שתתני */
+      font-family: 'Antidott', sans-serif; /* או כל פונט שתתני */
       margin: 0 auto;
     }
 
@@ -513,7 +513,7 @@ body::before {
       padding: 12px;
       border: 1px solid #ddd;
       border-radius: 5px;
-      font-family: 'Secular One', sans-serif;
+      font-family: 'Antidott', sans-serif;
     }
 
     .form-group textarea {
@@ -935,7 +935,7 @@ body::before {
 .shows-section {
   color: #ffffff;
   padding-bottom: 60px;
-  font-family: 'Secular One', sans-serif;
+  font-family: 'Antidott', sans-serif;
   text-align: center; /* מרכז את כל התוכן כולל כותרות */
 }
 
