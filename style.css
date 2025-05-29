@@ -877,7 +877,7 @@ body::before {
 .footer__copyright a {
   font-decoration:bold;
   font-size:18px;
-  color: #ffffff; /* צבע כהה אך לא שחור */
+  color: #4f1787; /* צבע כהה אך לא שחור */
   text-decoration: none;
   transition: color 0.3s;
   background: linear-gradient(90deg, #9b59b6, #ffffff, #9b59b6);
@@ -895,7 +895,7 @@ body::before {
   }
 }
 .footer__copyright a:hover {
-  color: #9b59b6; /* כחול כמו שאר האתר */
+  color: #d1b2f0; /* כחול כמו שאר האתר */
 }
 .gallery-section {
   padding: 60px 20px;
