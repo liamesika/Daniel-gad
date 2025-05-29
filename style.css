@@ -328,6 +328,15 @@ body::before {
       background: #9b59b6;
       margin: 15px auto;
     }
+.showreel-container {
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.showreel-video {
+  width: 100%;
+  border-radius: 12px;
+}
 .show-text {
   font-family: 'Antidott', sans-serif;
   font-size: 20px;
@@ -340,7 +349,10 @@ body::before {
   padding-top: 5px;
   padding-bottom:20px;
 }
-
+.show-text.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 .show-text strong {
   color: #d1a3ff;
 }
