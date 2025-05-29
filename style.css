@@ -629,7 +629,7 @@ footer a:hover {
     /* Mobile - תצוגה אנכית */
     @media screen and (max-width: 768px) {
       .desktop {
-        display: none;
+        display: block;
       }
     .about-text {
           text-align:center;
@@ -851,9 +851,7 @@ footer a:hover {
     padding-top: 10px;
   }
 
-  .desktop {
-    display: none;
-  }
+ 
 
   .mobile-menu-btn {
     display: block;
