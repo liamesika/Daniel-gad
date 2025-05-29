@@ -987,7 +987,6 @@ footer a:hover {
    .gallery-container {
     grid-template-columns: 1fr; /* תמונה אחת בשורה */
     max-width: 100%;
-    padding: 0 20px; /* רווח מימין ומשמאל */
   }
 
   .gallery-item {
