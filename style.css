@@ -8,6 +8,11 @@
       scroll-behavior: smooth;
       color: #f2e6ff;
     }
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
 @font-face {
   font-family: 'Antidott';
   src: url('osantidott-regular-web.woff') format('woff'),
@@ -416,8 +421,8 @@ body::before {
       }
 
     .section-container {
-      padding-left: 160px;
-      padding-right: 160px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
       .show-date,
       .show-location {
