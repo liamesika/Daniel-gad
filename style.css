@@ -52,10 +52,10 @@ body, html {
 body {
   background:
     radial-gradient(circle at 20% 40%, #f5ebff 0%, transparent 60%),
-    radial-gradient(circle at 80% 20%, #d1a3ff 0%, transparent 60%),
-    radial-gradient(circle at 50% 80%, #a347ff 0%, transparent 70%),
-    radial-gradient(circle at 60% 50%, #3d2952 0%, transparent 80%);
-  background-color: #1a0f2b;
+  radial-gradient(circle at 80% 20%, #7519d1 0%, transparent 60%),
+  radial-gradient(circle at 50% 80%, #7519d1 0%, transparent 70%),
+  radial-gradient(circle at 60% 50%, #3d2952 0%, transparent 80%);
+background-color: #1a0f2b;
   background-blend-mode: screen;
   background-attachment: fixed;
 }
@@ -285,7 +285,7 @@ body::before {
     .btn-outline {
       background: transparent;
       color: none;
-      border-color: none;
+      border-color: #7519d1;
     }
 
     .btn-outline:hover {
