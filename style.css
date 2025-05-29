@@ -337,7 +337,8 @@ body::before {
     direction:rtl;
   margin: 0 auto;
   text-align: center;
-  padding: 20px;
+  padding-top: 5px;
+  padding-bottom:20px;
 }
 
 .show-text strong {
