@@ -573,7 +573,7 @@ body::before {
 
     /* Footer */
     footer {
-      color: #4f1787;
+      color: #f2e6ff;
       font-size:15px;
       font-family: 'Antidott', sans-serif;
       text-align: center;
@@ -600,7 +600,7 @@ body::before {
         direction:rtl;
         font-family: 'Antidott', sans-serif;
       font-size:17px;
-      color: #4f1787;
+      color: #f2e6ff;
     }
     footer a {
        font-family: 'Antidott', sans-serif;
