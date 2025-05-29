@@ -131,10 +131,9 @@
 </section>
 
 
- <section id="videos" class="video-section smoky-bg">
+<section id="videos" class="video-section smoky-bg">
   <h2 class="section-title">שירים וסינגלים</h2>
   <div class="video-grid">
-
     <div class="video-item">
       <div class="video-embed">
         <iframe src="https://www.youtube.com/embed/qVj29VNCWxU?rel=0&showinfo=0"
@@ -145,7 +144,6 @@
         </iframe>
       </div>
     </div>
-
     <div class="video-item">
       <div class="video-embed">
         <iframe src="https://www.youtube.com/embed/HQjAVcmE5iY"
@@ -156,8 +154,6 @@
         </iframe>
       </div>
     </div>
-
-    <!-- סינגל חדש -->
     <div class="video-item">
       <div class="video-embed">
         <iframe src="https://www.youtube.com/embed/74Q7-sFWpyY?rel=0&showinfo=0"
@@ -168,9 +164,43 @@
         </iframe>
       </div>
     </div>
+  </div>
 
+  <!-- קליפים מהופעות -->
+  <h2 class="section-title">קליפים מהופעות</h2>
+  <div class="video-grid">
+    <div class="video-item">
+      <div class="video-embed local-video">
+        <video poster="videos/live1.jpg" controls>
+          <source src="img/daniel-2.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="video-item">
+      <div class="video-embed local-video">
+        <video poster="videos/live2.jpg" controls>
+          <source src="img/daniel-2.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="video-item">
+      <div class="video-embed local-video">
+        <video poster="videos/live3.jpg" controls>
+          <source src="img/daniel-2.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- שואוריל -->
+  <h2 class="section-title">Showreel</h2>
+  <div class="showreel-container">
+    <video controls poster="videos/showreel-thumb.jpg" class="showreel-video">
+      <source src="videos/showreel.mp4" type="video/mp4">
+    </video>
   </div>
 </section>
+
 
 
   <section id="gallery">
@@ -399,6 +429,11 @@
   });
 </script>
 
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.show-text.fade-in').classList.add('visible');
+  });
+</script>
 
 </body>
 </html>
