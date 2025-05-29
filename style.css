@@ -55,11 +55,12 @@ body, html {
   overflow-x: hidden;
 }
 body {
-  background:
-        radial-gradient(circle at 20% 40%, #e6d4ff 0%, transparent 30%),
+  background: 
+  radial-gradient(circle at 20% 40%, #f8f0ff 0%, transparent 55%),
   radial-gradient(circle at 80% 20%, #7519d1 0%, transparent 60%),
   radial-gradient(circle at 50% 80%, #7519d1 0%, transparent 70%),
   radial-gradient(circle at 60% 50%, #3d2952 0%, transparent 80%);
+
 background-color: #1a0f2b;
   background-blend-mode: screen;
   background-attachment: fixed;
