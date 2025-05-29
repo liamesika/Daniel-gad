@@ -961,13 +961,13 @@ footer a:hover {
   color: #d1b2f0; /* כחול כמו שאר האתר */
 }
 .gallery-section {
-  padding: 60px 20px;
+  padding-top: 60px ;
+  padding-bottom: 60px ;
   background-color: #ffffff;
 }
 
 .gallery-container {
   display: grid;
-    
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   max-width: 1200px;
