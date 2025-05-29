@@ -328,6 +328,20 @@ body::before {
       background: #9b59b6;
       margin: 15px auto;
     }
+.show-text {
+  font-family: 'Antidott', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #f2e6ff;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.show-text strong {
+  color: #d1a3ff;
+}
 
     /* Shows Section */
 
