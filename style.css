@@ -566,6 +566,7 @@ body::before {
       color: #7519d1;
     }
     footer p{
+        direction:rtl;
         font-family: 'Antidott', sans-serif;
       font-size:17px;
       color: #4f1787;
