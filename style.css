@@ -330,10 +330,11 @@ body::before {
     }
 .show-text {
   font-family: 'Antidott', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.8;
   color: #f2e6ff;
   max-width: 800px;
+    direction:rtl;
   margin: 0 auto;
   text-align: center;
   padding: 20px;
