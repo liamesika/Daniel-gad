@@ -368,6 +368,10 @@ body::before {
   padding-left: 160px;
   padding-right: 160px;
 }
+#shows {
+  padding-top: 30px;
+}
+
 
 .shows-grid {
   display: flex;
