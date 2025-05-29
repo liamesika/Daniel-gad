@@ -8,6 +8,14 @@
       scroll-behavior: smooth;
       color: #f2e6ff;
     }
+@font-face {
+  font-family: 'Antidott';
+  src: url('osantidott-regular-web.woff') format('woff'),
+       url('AnyConv.com__osantidott-regular-web.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .video-background {
   position: absolute;
   top: 0;
