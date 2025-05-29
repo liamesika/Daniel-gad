@@ -605,7 +605,7 @@ body::before {
     footer a {
        font-family: 'Antidott', sans-serif;
       font-size:17px;
-      color: #4f1787;
+      color: #f2e6ff;
       text-decoration: none;
       transition: color 0.3s;
     }
@@ -617,7 +617,7 @@ footer a:hover {
     .copyright {
       font-family: 'Antidott', sans-serif;
       margin-top: 20px;
-      color: #4f1787;
+      color: #f2e6ff;
     }
 
     /* Animation Delays */
