@@ -1018,7 +1018,7 @@ body::before {
 
 .btn-ticket:hover {
   background-color: #ffffff;
-  color: #f2e6ff;
+  color: #333333;
 }
 .header-image img {
   width: 100%;
