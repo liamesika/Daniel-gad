@@ -138,7 +138,7 @@ body::before {
     /* Hover and current page styling */
     .nav_page a:hover,
     .nav_page a.current {
-      color: #ba68c8 !important;
+      color: #7519d1 !important;
     }
 
     /* Mobile Navigation */
@@ -290,7 +290,7 @@ body::before {
 
     .btn-outline:hover {
       background: #f2e6ff;
-      color: #ba68c8;
+      color: #7519d1;
     }
 
     /* Section Styles */
@@ -561,7 +561,7 @@ body::before {
     }
 
     .social-links a:hover {
-      color: #ba68c8;
+      color: #7519d1;
     }
 
     .copyright {
