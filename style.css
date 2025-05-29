@@ -420,7 +420,10 @@ body::before {
     background-position: center;
       }
 
-   
+    .section-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
       .show-date,
       .show-location {
 
@@ -629,7 +632,7 @@ footer a:hover {
     /* Mobile - תצוגה אנכית */
     @media screen and (max-width: 768px) {
       .desktop {
-        display: block;
+        display: none;
       }
     .about-text {
           text-align:center;
@@ -695,6 +698,13 @@ footer a:hover {
 
 
     }
+
+    @media (max-width: 767px) {
+  .section-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   #home {
     height: 600px;
     padding-top: 60px;
@@ -851,7 +861,9 @@ footer a:hover {
     padding-top: 10px;
   }
 
- 
+  .desktop {
+    display: none;
+  }
 
   .mobile-menu-btn {
     display: block;
@@ -913,7 +925,8 @@ footer a:hover {
 .video-item.local-video video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* ✨ ממלא את הקונטיינר בלי רווחים */
+  background-color: transparent;
+  object-fit: contain; /* מציג את כל הווידאו בפנים */
   display: block;
 }
 
