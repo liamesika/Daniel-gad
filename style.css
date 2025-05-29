@@ -542,9 +542,11 @@ body::before {
 
     /* Footer */
     footer {
-      color: #f2e6ff;
+      color: #4f1787;
+      font-size:15px;
+      font-family: 'Antidott', sans-serif;
       text-align: center;
-      padding: 30px 20px;
+        padding: 30px 20px;
     }
 
     .social-links {
@@ -563,8 +565,25 @@ body::before {
     .social-links a:hover {
       color: #7519d1;
     }
+    footer p{
+        font-family: 'Antidott', sans-serif;
+      font-size:17px;
+      color: #4f1787;
+    }
+    footer a {
+       font-family: 'Antidott', sans-serif;
+      font-size:17px;
+      color: #4f1787;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+footer a:hover {
+  color: #7519d1;
+}
 
     .copyright {
+      font-family: 'Antidott', sans-serif;
       margin-top: 20px;
       color: #aaa;
     }
