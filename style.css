@@ -193,7 +193,7 @@ body::before {
     }
 
     .mobile-nav .nav_page a {
-      color: #f2e6ff;
+      color: #333333;
       display: block;
       font-size: 18px;
     }
