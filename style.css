@@ -921,8 +921,8 @@ footer a:hover {
 .video-item.local-video video {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   background-color: transparent;
-  object-fit: contain; /* מציג את כל הווידאו בפנים */
   display: block;
 }
 
