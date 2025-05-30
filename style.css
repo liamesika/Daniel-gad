@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Antidott&display=swap');
-    .spacer {
-    height: 10px;
-    }
-    body {
-      margin: 0;
-      font-family: 'Antidott', sans-serif;
-      scroll-behavior: smooth;
-      color: #f2e6ff;
-    }
+.spacer {
+height: 10px;
+}
+body {
+  margin: 0;
+  font-family: 'Antidott', sans-serif;
+  scroll-behavior: smooth;
+  color: #f2e6ff;
+}
 * {
   box-sizing: border-box;
   max-width: 100%;
