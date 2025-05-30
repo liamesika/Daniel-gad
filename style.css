@@ -931,11 +931,20 @@ footer a:hover {
   border: none;
   display: block;
 }
+.showreel-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 100%;
+}
+
 .responsive-iframe {
-  width: 500px;
-  height: 380px;
-  margin: 0 auto;
   position: relative;
+  width: 100%;
+  max-width: 900px; /* או כל רוחב שתרצי */
+  aspect-ratio: 16 / 9; /* יחס של וידאו סטנדרטי */
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .responsive-iframe iframe {
@@ -946,6 +955,7 @@ footer a:hover {
   height: 100%;
   border: none;
 }
+
 
 
 /* במסך רחב – שניים בשורה */
